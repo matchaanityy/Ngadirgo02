@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e4ecfa;
+  color: #000;
+}
+
+header {
+  position: relative;
+  background: url("../image/gambar\ 2.jpeg") no-repeat center center/cover;
+  color: white;
+  padding: 100px 30px;
+  text-align: center;
+  z-index: 0;
+  overflow: hidden;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(21, 11, 112, 0.671);
+  z-index: 1;
+}
+
+header * {
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+}
+
+nav {
+  background-color: #002147;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  padding: 12px 20px;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #001234;
+  border-radius: 10px;
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+
+.buku-container {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  width: 160px; /* batasi lebar container */
+}
+
+.buku-container img {
+  width: 100%;           /* gambar menyesuaikan container */
+  height: 230px;         /* sesuaikan tinggi gambar */
+  object-fit: cover;     /* potong gambar jika rasio tidak sesuai */
+  border-radius: 10px;   /* sudut membulat agar estetis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* bayangan ringan */
+}
+
+.buku-container:hover {
+  transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+/* Footer */
+footer {
+  background-color: #002147;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 10px;
+  min-width: 200px;
+}
+
+.footer-section a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: white;
+}
